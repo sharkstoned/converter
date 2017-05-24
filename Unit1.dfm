@@ -17,9 +17,11 @@ object Converter: TConverter
   TextHeight = 13
   object Image1: TImage
     Left = 397
-    Top = 111
+    Top = 110
     Width = 34
-    Height = 34
+    Height = 0
+    Hint = 'Swap Direction'
+    Enabled = False
     Picture.Data = {
       0954506E67496D61676589504E470D0A1A0A0000000D49484452000000220000
       002208030000000D99FBF00000000467414D410000B18F0BFC61050000000173

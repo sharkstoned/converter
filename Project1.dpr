@@ -9,6 +9,6 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TConverter, Converter);
-  Application.Run;
+  AApplication.CreateForm(TConverter, Converter);
+  pplication.Run;
 end.
