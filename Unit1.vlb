@@ -1,19 +1,19 @@
-﻿[first_currency]
-Coordinates=10,10,101,124
-
-[first_value]
-Coordinates=114,144,74,36
-
-[second_value]
-Coordinates=10,144,94,36
-
-[second_currency]
-Coordinates=121,10,112,124
-
-[convert_button]
+﻿[convert_button]
 Coordinates=386,10,100,58
 
 []
 Coordinates=243,10,59,58
 Visible=True
+
+[numberField1]
+Coordinates=114,144,74,36
+
+[numberField2]
+Coordinates=10,144,94,36
+
+[currencyField1]
+Coordinates=10,10,101,124
+
+[currencyField2]
+Coordinates=121,10,112,124
 

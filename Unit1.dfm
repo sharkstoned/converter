@@ -1,6 +1,7 @@
 object Converter: TConverter
   Left = 0
   Top = 0
+  Hint = 'Swap Direction'
   Caption = 'Converter'
   ClientHeight = 181
   ClientWidth = 825
@@ -11,6 +12,7 @@ object Converter: TConverter
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Image1: TImage
@@ -93,25 +95,27 @@ object Converter: TConverter
     Font.Style = []
     ParentFont = False
   end
-  object first_currency: TComboBox
+  object currencyField1: TComboBox
     Left = 24
     Top = 24
     Width = 129
     Height = 21
+    ItemIndex = 0
     TabOrder = 0
-    Text = 'Currency'
+    Text = #163'  GB Pound'
     Items.Strings = (
       #163'  GB Pound'
       '$  US Dollar'
       #8364'  Euro')
   end
-  object second_currency: TComboBox
+  object currencyField2: TComboBox
     Left = 488
     Top = 31
     Width = 129
     Height = 21
+    ItemIndex = 1
     TabOrder = 1
-    Text = 'Currency'
+    Text = '$  US Dollar'
     Items.Strings = (
       #163'  GB Pound'
       '$  US Dollar'
@@ -124,8 +128,9 @@ object Converter: TConverter
     Height = 33
     Caption = 'Convert'
     TabOrder = 2
+    OnClick = convert_buttonClick
   end
-  object first_value: TSpinEdit
+  object numberField1: TSpinEdit
     Left = 24
     Top = 64
     Width = 313
@@ -141,7 +146,7 @@ object Converter: TConverter
     TabOrder = 3
     Value = 0
   end
-  object second_value: TSpinEdit
+  object numberField2: TSpinEdit
     Left = 488
     Top = 64
     Width = 313
